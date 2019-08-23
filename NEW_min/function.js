@@ -156,7 +156,7 @@ function drawLabelHigh(time,bus,position,PH) {
     // line
         stroke(255);
         strokeWeight(2);
-        line(currentPosition+plusOffset, height/2, currentPosition+plusOffset, 9*height/10);
+        line(currentPosition+plusOffset, height/2, currentPosition+plusOffset, 8*height/10);
     // rect
         rect(currentPosition+plusOffset, 8*height/10, 100, 100, 0, 20, 20, 0);
 
@@ -164,18 +164,18 @@ function drawLabelHigh(time,bus,position,PH) {
     //text_title
         fill("white");
         textSize(30);
-        text(selectedBus, currentPosition+plusOffset+50, 9*height/10-65);
+        text(selectedBus, currentPosition+plusOffset+50, 8*height/10+35);
 
     //text_subtitle
         strokeWeight(1);
         textSize(25);
-        text(shHour+" : "+shMinu, currentPosition+plusOffset+50, 9*height/10-25);
+        text(shHour+" : "+shMinu, currentPosition+plusOffset+50, 8*height/10+75);
 
     } else if (position === 'down' && PH === 'low') {
     // line
         stroke(255);
         strokeWeight(2);
-        line(currentPosition+plusOffset, height/2, currentPosition+plusOffset, 7*height/10);
+        line(currentPosition+plusOffset, height/2, currentPosition+plusOffset, 6*height/10);
     // rect
         rect(currentPosition+plusOffset, 6*height/10, 100, 100, 0, 20, 20, 0);
 
@@ -183,12 +183,12 @@ function drawLabelHigh(time,bus,position,PH) {
     //text_title
         fill("white");
         textSize(30);
-        text(selectedBus, currentPosition+plusOffset+50, 7*height/10-65);
+        text(selectedBus, currentPosition+plusOffset+50, 6*height/10+35);
 
     //text_subtitle
         strokeWeight(1);
         textSize(25);
-        text(shHour+" : "+shMinu, currentPosition+plusOffset+50, 7*height/10-25);
+        text(shHour+" : "+shMinu, currentPosition+plusOffset+50, 6*height/10+75);
     }
 
 }
