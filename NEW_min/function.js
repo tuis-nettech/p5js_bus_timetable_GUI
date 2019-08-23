@@ -83,7 +83,7 @@ function drawLabelHigh(time,bus,position,PH) {
     var shMinu = nsh(time).substr(2,2);
     var plusOffset = ( (parseInt(shHour)*60*60+parseInt(shMinu)*60) - (parseInt(h)*60*60+parseInt(m)*60+parseInt(s)) )*(1/120)*ls;
 
-    if (plusOffset <= 0) {
+    if (plusOffset <= 0 || plusOffset > 2500) {
         return null;
     }
 
