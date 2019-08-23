@@ -111,7 +111,7 @@ function drawLabelHigh(time,bus,position,PH) {
 
     if (position === 'up' && PH === 'high') {
     // line
-        stroke(255);
+        stroke(fillColor);
         strokeWeight(2);
         line(currentPosition+plusOffset, height/2, currentPosition+plusOffset, height/10);
     // rect
@@ -132,7 +132,7 @@ function drawLabelHigh(time,bus,position,PH) {
 
     } else if (position === 'up' && PH === 'low') {
     // line
-        stroke(255);
+        stroke(fillColor);
         strokeWeight(2);
         line(currentPosition+plusOffset, height/2, currentPosition+plusOffset, 3*height/10);
     // rect
@@ -154,7 +154,7 @@ function drawLabelHigh(time,bus,position,PH) {
 
     } else if (position === 'down' && PH === 'high') {
     // line
-        stroke(255);
+        stroke(fillColor);
         strokeWeight(2);
         line(currentPosition+plusOffset, height/2, currentPosition+plusOffset, 8*height/10);
     // rect
@@ -173,7 +173,7 @@ function drawLabelHigh(time,bus,position,PH) {
 
     } else if (position === 'down' && PH === 'low') {
     // line
-        stroke(255);
+        stroke(fillColor);
         strokeWeight(2);
         line(currentPosition+plusOffset, height/2, currentPosition+plusOffset, 6*height/10);
     // rect
